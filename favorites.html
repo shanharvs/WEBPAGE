@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FAVORITES</title>
+    <link rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f4e7;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cae4ce;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #276967;
+}
+
+nav a:active {
+    color: #33443C;
+}
+
+        .skills-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 1px 2px 3px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2{
+        font-family: Georgia;
+        display: inline;
+        font-size: 35px;
+        color: #8FC0A9;
+        margin: 20px;
+        text-shadow: 1px 1px 1px black;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #33443C;
+        text-underline-offset: 12px;
+        }
+
+        h3{
+        font-family: Georgia;
+        display: inline;
+        font-size: 35px;
+        color: #8FC0A9;
+        text-shadow: 1px 1px 1px black;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: #33443C;
+        text-underline-offset: 12px;
+        margin-top: 200px;
+        margin-bottom: 200x;
+        }
+
+        .background-text {
+            position: absolute;
+            font-size: 150px;
+            font-family: Georgia;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.07);
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .skills-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: #cae4ce;
+            color: white;
+            text-shadow: 2px 1px 4px black;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-box:hover {
+            background-color: #276967;
+            color: white;
+        }
+
+        .nav-box:active {
+            background-color: #33443C;
+        }
+
+
+        .boxtype {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #F3FADC;
+        box-shadow: 0 0 10px;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+    .image_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+.button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-item {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+    display: block;
+}
+
+.image-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.image-item audio {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.video-container {
+            margin-top: 40px; 
+            margin-bottom: 20px;
+        }
+
+iframe {
+            width: 1000px;
+            height: 450px; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="biomain.html">BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html">SKILLS</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="favorites.html">FAVORITES</a></li>
+        </ul>
+    </nav>
+
+    <div class="skills-section">
+        <div class="background-text">FAVORITES</div>
+        <h1>FAVORITES</h1>
+    </div>
+
+
+    
+    <div class="image_container">
+        <div class="image-item">
+            <img src="music1.jpg" alt="Kiddie">
+            <audio controls autoplay muted loop>
+                <source src="Halsey - Castle (The Huntsman_ Winter's War Version) Teaser.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="image-item">
+            <img src="music2.jpg" alt="Kiddie2">
+            <audio controls autoplay muted loop>
+                <source src="Ready For It_ Trailer.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    
+        <div class="image-item">
+            <img src="music3.jpg" alt="Kiddie3">
+            <audio controls muted loop>
+                <source src="Fiona Apple - Paper Bag (Official HD Video).mp3">
+            </audio>
+        </div>
+    
+        <div class="image-item">
+            <img src="music4.jpg" alt="Kiddie4">
+            <audio controls muted loop>
+                <source src="Lana Del Rey - Ultraviolence (Teaser).mp3">
+            </audio>
+        </div>
+    </div>
+
+    <div class="boxtype">
+        <h2>MY BEAT</h2>
+        <p style="text-align: justify; line-height: 1.8; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-indent: 70px; margin: 30px;">
+            Halsey, Taylor Swift, Fiona Apple, and Lana Del Rey are my favorite artists because their music feels personal and deeply emotional.
+            Halsey blends indie-pop and alternative sounds, writing about identity, love, and mental health with raw honesty.
+            Taylor Swift is a master storyteller, switching between country, pop, and indie-folk while capturing emotions and life experiences in a way that feels relatable. 
+            Fiona Apple’s music is poetic and complex, mixing alternative rock and baroque pop with lyrics that explore pain, resilience, and introspection.
+            Lana Del Rey creates dreamy, nostalgic music with indie-pop and alternative rock influences, often singing about love, sadness, and American culture. 
+            Each of these artists writes music that feels like a personal diary, making their songs powerful and meaningful. 
+            I usually listen to women’s songs because their emotions, struggles, and perspectives resonate with me more. 
+            Since I’m more of a lyrics kind of girlie, I always look for songs with deep, poetic, and meaningful words that make me feel something.
+        </p>
+
+        <div class="button-container">
+            <a href="favorites.html" class="nav-box">Go Top</a>
+            <a href="index.html" class="nav-box">Home</a>
+    </div>
+    
+    </div>
+
+    <div class="image_container">
+        <div class="image-item">
+            <img src="movie1.jpg" alt="Movie 1">
+        </div>
+        <div class="image-item">
+            <img src="movie2.jpg" alt="Movie 2">
+        </div>
+        <div class="image-item">
+            <img src="movie3.jpg" alt="Movie 3">
+        </div>
+        <div class="image-item">
+            <img src="movie4.jpg" alt="Movie 4">
+        </div>
+    </div>
+      
+
+  <div class="boxtype">
+    <h2>MY KIND OF FILM</h2>
+    <p style="text-align: justify; line-height: 1.8; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-indent: 70px; margin: 30px;">
+        I love films and series like Spirited Away, Fleabag, The Great, and House of the Dragon because they all have strong storytelling, unique characters, and emotional depth. 
+        Spirited Away is a beautifully animated film with a magical and mysterious world, showing themes of growth, identity, and resilience.
+        Fleabag stands out with its sharp writing, dark humor, and deep exploration of grief, love, and self-destruction.
+        The Great is a clever mix of history and satire, with witty dialogue and bold characters that make it both entertaining and thought-provoking. 
+        House of the Dragon is a gripping drama filled with political intrigue, complex relationships, and powerful performances, making it an exciting and intense watch.
+        I love stories that are rich in emotion, layered in meaning, and full of strong, flawed characters who feel real.
+         Whether it’s fantasy, drama, or comedy, I’m drawn to narratives that leave a lasting impact.
+    </p>
+
+    
+<div class="button-container">
+    <a href="favorites.html" class="nav-box">Go Top</a>
+    <a href="index.html" class="nav-box">Home</a>
+</div>
+</div>
+
+<div class="boxtype">
+    <h3>Movie Trailer of <em>Fleabag</em>!</h3>
+    <div class="video-container">
+        <iframe src="FLEABAG_ Seizoen 1 _ Official trailer _ Lumière Series.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
